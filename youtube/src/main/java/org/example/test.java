@@ -68,7 +68,7 @@ public class test {
     private static void takeScreenshot(WebDriver driver, String stepName) {
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileHandler.copy(srcFile, new File("C:\\Users\\Acer\\Desktop\\youtube\\screenshots\\" + stepName + ".png"));
+            FileHandler.copy(srcFile, new File("C:\\Users\\Acer\\Documents\\GitHub\\YouTube-Testing\\youtube\\screenshots\\" + stepName + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
